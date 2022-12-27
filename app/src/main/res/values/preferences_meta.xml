@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_transmission_method_values">
+        <item>voiceActivity</item>
+        <item>ptt</item>
+        <item>continuous</item>
+    </string-array>
+
+    <string-array name="audio_transmission_method">
+        <item>@string/audio_transmission_method_voice</item>
+        <item>@string/audio_transmission_method_ptt</item>
+        <item>@string/audio_transmission_method_continous</item>
+    </string-array>
+
+    <string-array name="audio_sample_rate_values">
+        <item>48000</item>
+        <item>44100</item>
+        <item>16000</item>
+        <item>8000</item>
+    </string-array>
+
+    <string-array name="audio_per_packet_names">
+        <item>10ms</item>
+        <item>20ms</item>
+        <item>40ms</item>
+        <item>60ms</item>
+    </string-array>
+
+    <string-array name="audio_per_packet_values">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+
+</resources>

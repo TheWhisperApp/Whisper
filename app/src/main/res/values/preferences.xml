@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    General Preferences    -->
+    <string name="general_prefs">General</string>
+    <string name="enable_chat_notification">Chat notifications</string>
+    <string name="enable_chat_notification_summary">Receive notifications for chat messages</string>
+    <string name="stay_awake">Stay awake</string>
+    <string name="stay_awake_summary">Stay awake when using Whisper</string>
+    <string name="load_images">Load images</string>
+    <string name="load_images_summary">Download and show images in messaging</string>
+    <string name="auto_reconnect">Automatic reconnect</string>
+    <string name="auto_reconnect_summary">Enable automatic reconnect when Whisper incidentally disconnects from server</string>
+    <string name="force_tcp">Force TCP connection</string>
+    <string name="force_tcp_summary">Force Whisper to use TCP connection for all server connections</string>
+
+<!--    Audio Preferences    -->
+    <string name="audio_prefs">Audio</string>
+    <string name="audio_transmission_method">Transmit mode</string>
+    <string name="audio_transmission_method_summary">How Whisper captures your voice</string>
+    <string name="audio_transmission_method_voice">Voice activity</string>
+    <string name="audio_transmission_method_ptt">Push-to-talk</string>
+    <string name="audio_transmission_method_continous">Continuous</string>
+    <string name="audio_detection_thres">Audio detection threshold</string>
+    <string name="audio_detection_thres_summary">Minimum volume level for activating voice transmission (only available when Transmit Mode is \"Voice Activity\")</string>
+
+    <string name="audio_prefs_adv">Advanced Audio Configuration</string>
+    <string name="audio_sample_rate">Input audio sample rate</string>
+    <string name="audio_sample_rate_summary">Preferred audio sample rate</string>
+    <string name="audio_input_quality">Input audio quality</string>
+    <string name="audio_input_quality_summary">Preferred bitrate of transmission (bits per second)</string>
+    <string name="audio_per_packet">Audio / Packet</string>
+    <string name="audio_per_packet_summary">The length (in ms) of audio per packet</string>
+</resources>

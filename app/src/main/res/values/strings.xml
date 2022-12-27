@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name" translatable="false">Whisper</string>
+    <string name="certificate_migration_success">Successfully migrated the certificate.</string>
+    <string name="generate_cert_failure">Failed to generate certificates.</string>
+    <string name="generate_cert_in_porgress">Generating certificate…</string>
+    <string name="home_screen_chat_placeholder">Add or select a server to connect.</string>
+    <string name="add_server_dialog_title">Add a Server</string>
+    <string name="add_server_dialog_server_name">Label</string>
+    <string name="add_server_dialog_server_host">Hostname</string>
+    <string name="add_server_dialog_server_port">Port</string>
+    <string name="add_server_dialog_server_username">Username</string>
+    <string name="add_server_dialog_server_password">Password</string>
+    <string name="add_server_dialog_server_hide_password">Hide password</string>
+    <string name="add_server_dialog_server_show_password">Show password</string>
+    <string name="add_server_dialog_cancel">Cancel</string>
+    <string name="add_server_dialog_confirm">Confirm</string>
+    <string name="bottom_toggle_mute">Mute</string>
+    <string name="bottom_toggle_muted">Muted</string>
+    <string name="bottom_toggle_mute_desc">Mute toggle</string>
+    <string name="bottom_toggle_deafen">Deafen</string>
+    <string name="bottom_toggle_deafened">Deafened</string>
+    <string name="bottom_toggle_deafen_desc">Deafen toggle</string>
+    <string name="bottom_input_slider">Input Slider</string>
+    <string name="bottom_output_slider">Output Slider</string>
+    <string name="clickable_settings">Settings</string>
+    <string name="clickable_add_server">Add a server</string>
+    <string name="app_bar_host_name">Connected to: </string>
+    <string name="oobe_cert_gen_title">Welcome to Whisper!</string>
+    <string name="oobe_cert_gen_desc">Generating a certificate is highly recommended, as most servers require a certificate to login.</string>
+    <string name="certificate_export_prefix" translatable="false">whisper_cert_%s.p12</string>
+    <string name="add_server_dialog_server_host_error">Oops, invalid server hostname, check it again?</string>
+    <string name="add_server_dialog_server_port_error">Oops, invalid server port, check it again?</string>
+    <string name="christmas_greeting" translatable="false">🎄🎄Merry Christmas !🎄🎄</string>
+    <string name="modify_server_dialog_server_delete">DELETE</string>
+    <string name="modify_server_dialog_title">Edit Server Configuration</string>
+</resources>

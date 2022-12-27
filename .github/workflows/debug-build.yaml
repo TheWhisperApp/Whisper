@@ -1,0 +1,50 @@
+name: Whisper Debug Build
+
+on:
+  push:
+    branches:
+      - "*"
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: false
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+
+    - name: set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+      # turned off lint by now. will turn it back on soon
+    - name: Build with Gradle
+      run: ./gradlew assembleDebug -x lint
+
+    - name: Uplaod artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: debug-build
+        path: |
+          app/build/outputs/apk/debug/*.apk
+
+

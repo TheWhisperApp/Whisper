@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--    General Preferences    -->
+
+    <PreferenceCategory
+        android:key="general"
+        android:title="@string/general_prefs" />
+
+    <SwitchPreference
+        app:defaultValue="true"
+        app:key="chat_notification"
+        app:summary="@string/enable_chat_notification_summary"
+        app:title="@string/enable_chat_notification" />
+
+
+    <SwitchPreference
+        app:defaultValue="false"
+        app:key="stay_awake"
+        app:summary="@string/stay_awake_summary"
+        app:title="@string/stay_awake" />
+
+    <!--    <CheckBoxPreference-->
+    <!--        app:defaultValue="true"-->
+    <!--        app:key="useTts"-->
+    <!--        app:summary="@string/useTtsSum"-->
+    <!--        app:title="@string/useTts" />-->
+
+    <!--    <CheckBoxPreference-->
+    <!--        app:defaultValue="false"-->
+    <!--        app:key="shortTtsMessages"-->
+    <!--        app:summary="@string/shortTtsMessagesSum"-->
+    <!--        app:title="@string/shortTtsMessages" />-->
+
+    <SwitchPreference
+        app:defaultValue="true"
+        app:key="load_images"
+        app:summary="@string/load_images_summary"
+        app:title="@string/load_images" />
+
+    <SwitchPreference
+        app:defaultValue="true"
+        app:key="auto_reconnect"
+        app:summary="@string/auto_reconnect_summary"
+        app:title="@string/auto_reconnect" />
+
+    <SwitchPreference
+        app:defaultValue="false"
+        app:key="force_tcp"
+        app:summary="@string/force_tcp_summary"
+        app:title="@string/force_tcp" />
+
+    <!--    <CheckBoxPreference-->
+    <!--        app:defaultValue="false"-->
+    <!--        app:key="useTor"-->
+    <!--        app:summary="@string/useTorSum"-->
+    <!--        app:title="@string/useTor" />-->
+
+    <!--    <CheckBoxPreference-->
+    <!--        app:defaultValue="false"-->
+    <!--        app:key="startUpInPinnedMode"-->
+    <!--        app:layout_height="wrap_content"-->
+    <!--        app:layout_width="wrap_content"-->
+    <!--        app:summary="@string/pref_start_upIn_pinned_mode_sum"-->
+    <!--        app:title="@string/pref_start_up_in_pinned_mode" />-->
+
+
+    <!--    Audio Preferences    -->
+    <PreferenceCategory
+        app:key="audio"
+        app:title="@string/audio_prefs" />
+
+    <DropDownPreference
+        app:defaultValue="voiceActivity"
+        app:entries="@array/audio_transmission_method"
+        app:entryValues="@array/audio_transmission_method_values"
+        app:key="audio_transmission_method"
+        app:summary="@string/audio_transmission_method_summary"
+        app:title="@string/audio_transmission_method" />
+
+    <SeekBarPreference
+        android:max="100"
+        app:defaultValue="50"
+        app:key="audio_detection_thres"
+        app:summary="@string/audio_detection_thres_summary"
+        app:title="@string/audio_detection_thres" />
+
+    <PreferenceCategory
+        app:initialExpandedChildrenCount="0"
+        app:key="audio_advanced"
+        app:title="@string/audio_prefs_adv" />
+
+    <DropDownPreference
+        app:defaultValue="48000"
+        app:entries="@array/audio_sample_rate_values"
+        app:entryValues="@array/audio_sample_rate_values"
+        app:key="input_quality"
+        app:summary="@string/audio_sample_rate_summary"
+        app:title="@string/audio_sample_rate" />
+
+    <SeekBarPreference
+        app:defaultValue="40"
+        app:key="input_bitrate"
+        android:max="96"
+        app:min="8"
+        app:summary="@string/audio_input_quality_summary"
+        android:text=" bps"
+        app:title="@string/audio_input_quality" />
+
+    <ListPreference
+        app:defaultValue="2"
+        app:entries="@array/audio_per_packet_names"
+        app:entryValues="@array/audio_per_packet_values"
+        app:key="audio_per_packet"
+        app:summary="@string/audio_per_packet_summary"
+        app:title="@string/audio_per_packet" />
+
+
+</PreferenceScreen>
